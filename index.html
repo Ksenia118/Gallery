@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Галерея шпалер</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      header p {
+        font-size: 0.9rem;
+      }
+
+      .gallery img {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Галерея шпалер</h1>
+    <p>Вибери улюблене зображення для свого пристрою</p>
+  </header>
+
+  <main>
+    <div class="gallery">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Шпалера 1">
+      <img src="https://picsum.photos/id/1025/600/400" alt="Шпалера 2">
+      <img src="https://picsum.photos/id/1040/600/400" alt="Шпалера 3">
+      <img src="https://picsum.photos/id/1060/600/400" alt="Шпалера 4">
+      <img src="https://picsum.photos/id/1074/600/400" alt="Шпалера 5">
+      <img src="https://picsum.photos/id/1084/600/400" alt="Шпалера 6">
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Галерея шпалер. Усі права захищені.
+  </footer>
+
+</body>
+</html>
