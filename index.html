@@ -14,7 +14,8 @@
       --bg-color: #f0f0f0;
       --text-color: #ffffff;
       --accent-color: #4FD1C5;
-      --header-bg: #333333;
+      --header-bg: #00001a;
+  --bg-gradient: linear-gradient(0deg, #FDABAB, #FFD7A6, #F7FAB2, #C6F8BD, #95F1FA, #9BBFF8, #FAC1FA, #FDABAB);
     }
 
     * {
@@ -25,6 +26,10 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: var(--bg-color);
+      background: var(--bg-gradient); /* Використовуємо градієнт */
+  height: 100vh; /* Висота на весь екран */
+  background-size: cover; /* Для покриття всього фону */
+  background-position: center;
     }
 
     header {
