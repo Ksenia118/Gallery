@@ -15,7 +15,7 @@
       --text-color: #ffffff;
       --accent-color: #4FD1C5;
       --header-bg: #00001a;
-  --bg-gradient: linear-gradient(0deg, #FDABAB, #FFD7A6, #F7FAB2, #C6F8BD, #95F1FA, #9BBFF8, #FAC1FA, #FDABAB);
+      --bg-gradient: linear-gradient(0deg, #FDABAB, #FFD7A6, #F7FAB2, #C6F8BD, #95F1FA, #9BBFF8, #FAC1FA, #FDABAB);
     }
 
     * {
@@ -26,10 +26,10 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: var(--bg-color);
-      background: var(--bg-gradient); /* Використовуємо градієнт */
-  height: 100vh; /* Висота на весь екран */
-  background-size: cover; /* Для покриття всього фону */
-  background-position: center;
+      background: var(--bg-gradient);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
     }
 
     header {
@@ -102,23 +102,23 @@
 </head>
 <body>
 
-  <header>
+  <header role="banner">
     <h1 class="mb-2">Галерея шпалер</h1>
     <p class="lead">Вибери улюблене зображення для свого пристрою</p>
   </header>
 
-  <main>
-    <div class="gallery">
-      <img src="https://picsum.photos/id/1015/600/400" alt="Шпалера 1">
-      <img src="https://picsum.photos/id/1025/600/400" alt="Шпалера 2">
-      <img src="https://picsum.photos/id/1040/600/400" alt="Шпалера 3">
-      <img src="https://picsum.photos/id/1060/600/400" alt="Шпалера 4">
-      <img src="https://picsum.photos/id/1074/600/400" alt="Шпалера 5">
-      <img src="https://picsum.photos/id/1057/600/400" alt="Шпалера 6">
-    </div>
+  <main role="main">
+    <section class="gallery" aria-label="Галерея зображень">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Гірська річка">
+      <img src="https://picsum.photos/id/1025/600/400" alt="Песик у пледі">
+      <img src="https://picsum.photos/id/1040/600/400" alt="Замок у горах">
+      <img src="https://picsum.photos/id/1060/600/400" alt="Заварювання кави">
+      <img src="https://picsum.photos/id/1074/600/400" alt="Левиця">
+      <img src="https://picsum.photos/id/1057/600/400" alt="Мррське узбережжя">
+    </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     &copy; 2025 Галерея шпалер
   </footer>
 
