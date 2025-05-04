@@ -37,6 +37,7 @@
       color: var(--text-color);
       text-align: center;
       padding: 1rem;
+      min-height: 120px;
     }
 
     h1 {
@@ -62,6 +63,7 @@
       gap: 15px;
       width: 100%;
       max-width: 800px;
+      min-height: 1000px;
     }
 
     picture {
@@ -75,10 +77,10 @@
       width: 100%;
       height: auto;
       object-fit: cover;
-      transition: transform 0.3s ease;
     }
 
     .gallery img:hover {
+      transition: transform 0.3s ease;
       transform: scale(1.02);
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
