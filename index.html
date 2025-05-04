@@ -106,6 +106,45 @@
         height: 225px;
       }
     }
+    @media print 
+  body {
+    background: white !important;
+    color: black;
+    font-size: 12pt;
+    height: auto;
+  }
+
+  header, footer {
+    display: none;
+  }
+
+  main {
+    padding: 0;
+    margin: 0;
+  }
+
+  .gallery {
+    display: block;
+    max-width: 100%;
+    gap: 0;
+  }
+
+  picture {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 10px;
+    height: auto !important;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto !important;
+    object-fit: contain !important;
+    box-shadow: none;
+    border-radius: 0;
+    transform: none !important;
+  }
+    }
   </style>
 </head>
 <body>
